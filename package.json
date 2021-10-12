@@ -1,0 +1,34 @@
+{
+  "name": "kelp-controller",
+  "version": "0.0.0",
+  "description": "kelp controlelr",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "kelp-cookie": "^1.0.6",
+    "kelp-send": "^1.0.6",
+    "negotiator": "^0.6.2"
+  },
+  "devDependencies": {
+    "kelp": "^2.0.2",
+    "kelp-body": "^1.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/song940/kelp-controller.git"
+  },
+  "keywords": [
+    "kelp"
+  ],
+  "author": "Lsong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/song940/kelp-controller/issues"
+  },
+  "homepage": "https://github.com/song940/kelp-controller#readme"
+}
