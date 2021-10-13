@@ -1,5 +1,4 @@
 const assert = require('assert');
-const send = require('kelp-send');
 const Response = require('./response');
 const Controller = require('./controller');
 
@@ -11,14 +10,10 @@ const Controller = require('./controller');
 const controller = ctrl => {
   assert.ok(ctrl);
   assert.strictEqual(typeof ctrl, 'function');
-  return [
-    send,
-    async (req, res, next) => {
-      const response = await ctrl(req);
-      res.send(response);
-      return next();
-    }
-  ];
+  return async (req, res, next) => {
+    const response = await ctrl(req);
+    res.send(response);
+  };
 };
 
 controller.Response = Response;
